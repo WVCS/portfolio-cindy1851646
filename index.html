@@ -1,14 +1,89 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>My Website</title>
-  </head>
-  <body>
-    <h1> I Did it!</h1>
+  <style>
+  .navbar {
+  overflow: hidden;
+  background-color: #b3b3e6;
+width: 100%;
+  }
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 20px 16px;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 20px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: #99ccff;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #ffcccc;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ff9999;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+  
+ <body>
+  
+   <div class="navbar">
+  <a href="main.html">Home</a>
+  <a href="links/about.html">About Us</a>
+  <div class="dropdown">
+    <button class="dropbtn">Clothes  
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="links/girls.html">Girls</a>
+      <a href="links/boys.html">Boys</a>
+        <title>My Website</title>
+
+		
+	</div>
+  </div> 
  
-    <p> <a href="animation(move style).html">  Click me! </a> </p>
-  
-  
+ <a href="main.html" style="float: right;">Cart / Check Out</a>
+  </div>
+   <p> <a href="animation(move style).html">  Click me! </a> </p>
+    
   </body>
 
 
