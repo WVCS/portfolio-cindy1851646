@@ -1,9 +1,15 @@
 <!DOCTYPE html>
-<head> <link rel="stylesheet" type="text/css" href="style.css"> </head>
 <html>
+  
   <style>
-   .url {cursor: url(my.cur),auto;}
-	  
+ html{
+  background: url(images/background.jpg) no-repeat center fixed; 
+  background-size: cover;}
+  
+ .url {cursor: url(images/my.cur),auto;}
+  
+  
+  
   .navbar {
   overflow: hidden;
   background-color: #99ccff;
@@ -61,31 +67,55 @@ p{
  color: white;
  text-align: center;
  }
+ 
+ .move {
+  float: none;
+  width: 100px;
+  height: 100px;
+  background-color: #99ccff;
+  animation-name: example;
+  animation-duration: 15s;
+  animation-delay: 1s;
+  position: relative;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes example
+{
+  0% {background-color:#99ccff; left:0px; top: 0px;}
+  25% {background-color:#ccff99; left: 500px; top: 0px;}
+  50% {background-color: red; left: 900px; top: 0px;}
+  75% {background-color: purple; left: 500px; top:0px;}
+  100% {background-color: black; left: 0px; top:0px;}
+}
 </style>
  <title>My Portfolio</title>
-<link rel="shortcut icon" type="image/x-icon" href="logo.ico">
-<body class="url">
+ <link rel="shortcut icon" type="image/x-icon" href="images/logo.ico">
+ 
+ <body class="url">
   <div class="navbar">
   <a href="main.html">Home</a>
-  <a href="about.html">About Me</a>
+  <a href="links/about.html">About Me</a>
   <div class="dropdown">
-    <button class="dropbtn">Portfolio   
+    <button class="dropbtn">Portfolio  
       <i class="fa fa-caret-down"></i>
     </button>
     <div class="dropdown-content">
-      <a href="links/girls.html">Girls</a>
-      <a href="links/boys.html">Boys</a>
+      <a href="links/web.html">Web Design</a>
+      <a href="links/others.html">Others</a>
         
 
 		
 	</div>
   </div> 
  
- <a href="contact.html" style="float: right;">Contact</a>
+ <a href="links/contact.html" style="float: right;">Contact</a>
   </div>
 
- <p> <img style="width: 80%" src="logo.png" > </p> 
+ <p> <img style="width: 80%" src="images/logo.png" > </p> 
 
+ <div class="move"> <img src="images/bixin.jfif"> </div>
     
   </body>
 
