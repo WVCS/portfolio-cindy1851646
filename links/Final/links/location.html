@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+<style>
+
+
+
+p {
+text-align: center;
+}
+
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding:0;
+	overflow:hidden;
+	background-color:  #ffe6ff;
+}
+
+li {
+	float:left;
+}
+
+
+
+li a {
+	display:block;
+	text-align: center;
+	padding: 10px 30px;
+	text-decoration: none;
+	font-family: avantgarde;
+}
+
+
+</style>
+
+<title>Blue Ocean</title>
+<link rel="shortcut icon" type="image/x-icon" href="../images/logo.ico">
+ <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+   <body background="../images/back.jpg">
+   <ul style="float:center;">
+	<li style="font-size:20px;"><a class="url"href="../main.html">Home</a></li>
+	<li style="font-size:20px;"><a class="url" href="staff.html">Staff info</a></li>
+	<li style="font-size:20px;"><a class="url" href="order.html">Order</a></li>
+	
+	<li style="float:right;font-size:20px;"><a class="url" href="location.html">Location</a></li>
+</ul>
+
+<h1 style=" text-align: center; font-size: 50px;"> This is our location: </h1>
+<h2 style=" text-align: center; font-size: 30px;"> 13500 Wolverine Way.</h2>
+<br><br>
+
+<div class="container">
+  <div class="jumbotron">
+    <h1 style="text-align:center;font-family:broadway;color:#66ccff;">Join!</h1>      
+    <p style="text-align:center;font-family:avantgarde;color:#66ccff;">Join our mailing list</p>
+  </div>
+  
+  
+<div class="padding">
+<form style="text-align:center;"
+action="/mailinglist.php" method="post">
+<fieldset style="width:100%;text-align:center;padding:15px;">
+<legend style="text-align:center;font-size:20px;">Join our mailing list!</legend>
+<br>
+<ul style="list-style-type:none;">
+<br>
+	<li style="color:white; text-align:center;"><label for "firstlast"> Name: </label>
+		<input type="text" name="username" id="firstlast"></li><br><br>
+	<li style="color:white; text-align:center;"><label for "email">Email:</label>
+		<input type="text" name="email" id="email"></li><br>
+	<li style="color:#66ccff; text-align:center;"><p style="font-size:20px;">
+		If you want more information about our beach resort, join the mailing list! <i>(Not required.)</i></p>
+		<textarea name="Otherinfo" rows="7" cols="120" placeholder="Tell us what you think!"></textarea>
+		</li>
+		<br>
+</ul>
+<a href="done.html">
+<input type="button" value="Subscribe"></a>
+</fieldset>
+</form>  
+</div>
+
+
+
+
+
+
+</body>
+</html>
