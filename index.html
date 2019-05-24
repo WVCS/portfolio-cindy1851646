@@ -70,8 +70,8 @@ p{
  
  .move {
   float: none;
-  width: 100px;
-  height: 100px;
+  width: 15%;
+  height: auto;
   background-color: #99ccff;
   animation-name: example;
   animation-duration: 15s;
@@ -83,11 +83,11 @@ p{
 
 @keyframes example
 {
-  0% {background-color:#99ccff; left:0px; top: 0px;}
-  25% {background-color:#ccff99; left: 500px; top: 0px;}
-  50% {background-color: red; left: 900px; top: 0px;}
-  75% {background-color: purple; left: 500px; top:0px;}
-  100% {background-color: black; left: 0px; top:0px;}
+  0%  {left:0px; top: 0px;}
+  25% {left: 500px; top: 0px;}
+  50% { left: 900px; top: 0px;}
+  75% { left: 500px; top:0px;}
+  100% { left: 0px; top:0px;}
 }
 </style>
  <title>My Portfolio</title>
@@ -115,7 +115,7 @@ p{
 
  <p> <img style="width: 80%" src="images/logo.png" > </p> 
 
- <div class="move"> <img src="images/bixin.jfif"> </div>
+ <div class="move"> <img src="images/bixin.jfif" style="width:100%; height:auto;"> </div>
     
 </body>
 </html>
