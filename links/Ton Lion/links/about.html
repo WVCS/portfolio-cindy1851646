@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+
+<script>
+function validateform(){
+  var x = document.forms["myform"]["fname"] ["email"].value;
+  if (x == ""){
+    alert("Please fill in your name");
+    return false;
+  }
+ 
+}
+
+
+
+</script>
+
+<title>Ton Lion</title>
+<link rel="shortcut icon" type="image/x-icon" href="../images/logo.ico">
+ <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+ <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  
+ <head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top:0px;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: #b3b3e6;
+  width: 100%;
+  position: fixed;
+  z-index: 5;
+  maegin-top: 0px;
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 20px 16px;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 20px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: #99ccff;
+}
+
+.dropdown-content {
+  display: none;
+  position: fixed;
+  background-color: #ffcccc;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ff9999;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.logo{
+    float:left;
+}
+
+
+.move {
+  float: none;
+  width: 100px;
+  height: 100px;
+  background-color: #99ccff;
+  animation-name: example;
+  animation-duration: 15s;
+  animation-delay: 1s;
+  position: relative;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes example
+{
+  0% {background-color:#99ccff; left:0px; top: 0px;}
+  25% {background-color:#ccff99; left: 500px; top: 0px;}
+  50% {background-color: red; left: 900px; top: 0px;}
+  75% {background-color: purple; left: 500px; top:0px;}
+  100% {background-color: black; left: 0px; top:0px;}
+}
+
+.flex-cen{
+  display: flex;
+  flex-direction: row;
+justify-content: center;
+}
+
+.flex-cen-child{
+  margin: 1rem;
+}
+
+.iex1{
+  display: inline;
+}
+
+.col-lg-4{
+  border: 1px solid black;
+  padding: 1rem;
+}
+.col-lg-6{
+  border: 1px solid black;
+  padding: 1rem;
+}
+.iex2{
+width: 50%;
+ display: inline-block;
+}
+.half-card{
+  width: 45%;
+  display: inline-block;
+}
+
+.iex3 {width: 50%;
+      display: inline-block;
+      color: red; 
+      position: absolute; 
+      right:10px;
+      top:10px; }
+
+</style>
+</head>
+<body>
+
+
+<div class="navbar">
+ <div class="logo">
+            <img src="../images/logo.png"  style="width: 10%">
+        </div>
+  <a href="../main.html">Home</a>
+  <a href="about.html">About Us</a>
+  <div class="dropdown">
+    <button class="dropbtn">Clothes  
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="girls.html">Girls</a>
+      <a href="boys.html">Boys</a>
+      
+		
+	</div>
+  </div> 
+<a href="../main.html" style="float: right;">Cart / Check Out</a>
+  </div>
+<br><br><br><br>
+
+<form name="myform" action="/action_page.php" 
+ onsubmit="return validateform()" method="post">
+      Name: <input type="text" name="fname" required>
+     <br><br>
+	 Email: <input type="text" name="email" required>
+     <br><br>
+	 <input type="submit"  value="Submit"> 
+	 </form>
+
+<br><br>
+
+<div class="move"> <img src="../images/haha.gif"> </div>
+
+
+<div class="flex-cen">
+ 
+   <div class="flex-cen-child"><!--CHILD ELEMENT (put something in it to make it visible ) --->
+     <img src="https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=380948359,285023291&fm=26&gp=0.jpg">
+     <h1 class="iex1"></h1>
+  </div>
+  
+</div>
+
+<div class="container-fluid">
+ <div class="row justify-content-center"> 
+       <div class="col-lg-4 col-md-12">
+      <img src="../images/store.jpg" >
+      <h5 class="iex1"> This is a picture of out store.</h5>
+       </div>
+       <div class="col-lg-4 col-md-12">
+        <img src="../images/clothes2.jpg">
+        
+          </div>
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
