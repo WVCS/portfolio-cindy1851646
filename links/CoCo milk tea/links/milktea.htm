@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<head>
+<style>
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #ffb3d9;
+}
+
+li {
+  float: right;
+}
+
+li a, .dropbtn {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+  background-color: red;
+}
+
+li.dropdown {
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #b3d9ff;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #0073e6}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+
+
+div.gallery {
+  border: 1px solid #ccc;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+
+</style>
+</head>
+
+<body background="../images/back.jpg">
+
+<ul>
+   <li><a href="location.htm">Location</a></li>
+  <li><a href="contact.htm">Contacts</a></li>
+  <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">Menu</a>
+    <div class="dropdown-content">
+      <a href="milktea.htm">Milk Tea</a>
+      <a href="fruittea.htm">Fruit Tea</a>
+      <a href="dessert.htm">Desserts</a>
+
+    </div>
+  </li>
+<li><a href="../main.htm">Home</a></li>
+  </ul>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="../images/ziyu.jpg">
+      <img src="../images/ziyu.jpg" alt="Cinque Terre" width="600" height="400">
+    </a>
+    <div class="desc">$4.25<br>Hot/Ice<br>Midieum/Large</div>
+  </div>
+</div>
+
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="../images/qingke.jpg">
+      <img src="../images/qingke.jpg" alt="Forest" width="600" height="400">
+    </a>
+    <div class="desc">$3.25<br>ice only<br>Large</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="../images/tea1.jpg">
+      <img src="../images/tea1.jpg" alt="Northern Lights" width="600" height="400">
+    </a>
+    <div class="desc">$3.5 (hot/cold)</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="../images/tea2.jpg">
+      <img src="../images/tea2.jpg" alt="Mountains" width="600" height="300">
+    </a>
+    <div class="desc">$4</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="../images/caomei.jpg">
+      <img src="../images/caomei.jpg" alt="Mountains" width="600" height="300">
+    </a>
+    <div class="desc">Strawberry<br>$4</div>
+  </div>
+</div>
+
+
+
+<div class="clearfix"></div>
+  
+
+  
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </body>
+</html>
